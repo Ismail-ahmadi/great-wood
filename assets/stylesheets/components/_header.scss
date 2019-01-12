@@ -1,6 +1,15 @@
 .header {
-  display: none;
-  padding: $s 0;
+  // display: none;
+  // padding: $s 0;
+  padding: 0;
+  min-height: 400px;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 
   @include from(lg) {
     box: horizontal middle;
@@ -8,10 +17,37 @@
 
   .logo {
     color: $gray-400;
-    padding: $h;
+    padding: $h $h $h $h*5;
+    width: 200px;
+    height: auto;
 
-    svg {
-      size: $s*2;
+    img {
+      padding-top: 10px;
+      width: 200px;
+    }
+  }
+
+  .black {
+    width: 100%;
+    height: auto;
+
+    .menu {
+      width: 100%;
+      background-color: $light-black;
+      margin-top: $h;
+
+      //display: none;
+      &__link {
+        padding: $h*2;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+      }
+
+      &__link:hover {
+        background-color: $orange;
+        color: $light-black;
+      }
     }
   }
 
