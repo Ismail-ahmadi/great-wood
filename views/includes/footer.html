@@ -1,5 +1,43 @@
-<footer class="footer container">
-  <span class="faint">
-    Copyright  ©  {{ 'now' | date: '%Y' }}
-  </span>
+<footer >
+  <div class="footer">
+    <div class="footer__content">
+      <div class="footer__content__left">
+          <h4>Contact</h4>
+          <p>Please feel free to Contact us </p>
+          <form class="form">
+          <label>Name:</label>
+          <input type="text" name="name" placeholder="Enter your full name" required >
+          <label>Email:</label>
+          <input type="email" name="email" placeholder="Enter your Email" required >
+          <label>Message:</label>
+          <textarea name="message" required placeholder="Enter your message" ></textarea>
+          <button type="submit" name="submit">Submit</button>
+          </form>
+      </div>  
+      <div class="footer__content__center">
+        <h4>Our vision</h4>
+        <p> is the world's first ever engineered wooden flooring that is able to emit -ions into the surroundings. Founded by Mr Gavin Teh, PT Sugawa Indonesia was launched in the year 2014 becoming the sole distributor of .</p>
+        <p> was established year 2013 in Malaysia and has now successfully branched out internationally to countries such as Abu Dhabi, China, Hongkong, Singapore and several others.</p>
+        <h4>Our vision</h4>
+        <p> is the world's first ever engineered wooden flooring that is able to emit -ions into the surroundings. Founded by Mr Gavin Teh, PT Sugawa Indonesia was launched in the year 2014 becoming the sole distributor of .</p>
+        <p> was established year 2013 in Malaysia and has now successfully branched out internationally to countries such as Abu Dhabi, China, Hongkong, Singapore and several others.</p>
+      </div>
+      <div class="footer__content__right">
+        <h4>Find us on: </h4>
+        <a class="icon" href="#"> facebook: {% Icon 'facebook' %}</a>
+        <a class="icon" href="#">{% Icon 'whatsapp' %}</a>
+        <a class="icon" href="#">{% Icon 'twitter' %}</a>
+  
+        {% comment %} <img src="{{ site.logo }}" /> {% endcomment %}
+        <p>With  flooring, we focus on creating that special spacewithin your home – a place that is free of viruses, bacteria and other unhealthy air pollutants, so that you and your family can love, live and play worry-free, in the place where you spend most of your time in.</p>
+        <h4>Great wood Indonesian engineered wood floor for creative living</h4>
+        <p>With  flooring, we focus on creating that special spacewithin your home – a place that is free of viruses, bacteria and other unhealthy air pollutants, so that you and your family can love, live and play worry-free, in the place where you spend most of your time in.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="center">
+        <p>©  {{ 'now' | date: '%Y' }} Great wood Indonesian engineered wood floor for creative living </p>
+      </span>
+    </div>
+  </div>
 </footer>
