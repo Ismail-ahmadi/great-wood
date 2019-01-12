@@ -2,12 +2,12 @@ backend:
   name: 'git-gateway'
   branch: 'master'
 
-display_url: 'https://miloandfinn.netlify.com'
-logo_url: 'https://miloandfinn.netlify.com/assets/favicons/android-chrome-384x384.png'
+display_url: 'https://greatwood.netlify.com'
+logo_url: 'https://greatwood.netlify.com/assets/favicons/android-chrome-384x384.png'
 media_library:
   name: 'uploadcare'
   config:
-    publicKey: '9f0b2b6f1d82d63f1332'
+    publicKey: 'dc45e2edd3500fecbc5a'
     imagesOnly: true
     tabs: 'file gphotos url'
 
@@ -25,8 +25,24 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'about' }
           - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav' }
+          - { label: 'Image', name: 'image', widget: 'image', }
+          - { label: 'Headertitle', name: 'headertitle', widget: 'string' }
           - { label: 'Summary', name: 'summary', widget: 'text' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Home'
+        name: 'home'
+        file: 'pages/home.md'
+        fields:
+          - { label: 'Headertitle', name: 'headertitle', widget: 'string' }
+          - { label: 'Permalink', name: 'permalink', widget: 'hidden', default: '/' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'home' }
+          - { label: 'Image', name: 'image', widget: 'image', }
+          - { label: 'Imagehome', name: 'imagehome', widget: 'image' }
+          - { label: 'Image1', name: 'image1', widget: 'image' }
+          - { label: 'Image2', name: 'image2', widget: 'image' }
+          - { label: 'Image3', name: 'image3', widget: 'image' }
+          - { label: 'Logo', name: 'logo', widget: 'image' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }    
       - label: 'Tentang Kami'
         name: 'tentang'
         file: 'pages/id/tentang.md'
@@ -35,6 +51,8 @@ collections:
           - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'tentang-kami' }
           - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'navId' }
           - { label: 'Lang', name: 'lang', widget: 'hidden', default: 'id' }
+          - { label: 'Image', name: 'image', widget: 'image', }
+          - { label: 'Headertitle', name: 'headertitle', widget: 'string' }
           - { label: 'Summary', name: 'summary', widget: 'text' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'FAQ'
@@ -44,6 +62,8 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'faq' }
           - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav' }
+          - { label: 'Image', name: 'image', widget: 'image', }
+          - { label: 'Headertitle', name: 'headertitle', widget: 'string' }
           - label: 'Questions'
             name: 'questions'
             widget: 'list'
@@ -64,7 +84,9 @@ collections:
       - {label: 'Date', name: 'date', widget: 'date'}
       - {label: 'Location', name: 'location', widget: 'string'}
       - {label: 'Body', name: 'body', widget: 'markdown'}
-      - {label: 'Image', name: 'image', widget: 'image', required: false}
+      - { label: 'Image', name: 'image', widget: 'image', }
+      - { label: 'Headertitle', name: 'headertitle', widget: 'string' }
+      - {label: 'Image-gallery', name: 'image-gallery', widget: 'image', required: false}
       - label: 'Gallery'
         name: 'gallery'
         widget: 'image'
@@ -85,9 +107,11 @@ collections:
     fields:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Date', name: 'date', widget: 'date'}
+      - { label: 'Image', name: 'image', widget: 'image', }
+      - { label: 'Headertitle', name: 'headertitle', widget: 'string' }
       - {label: 'Location', name: 'location', widget: 'string'}
       - {label: 'Body', name: 'body', widget: 'markdown'}
-      - {label: 'Image', name: 'image', widget: 'image', required: false}
+      - {label: 'Image-gallery', name: 'image-gallery', widget: 'image', required: false}
       - label: 'Gallery'
         name: 'gallery'
         widget: 'image'
@@ -116,6 +140,7 @@ collections:
               - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://'}
               - { label: 'Default Language', name: 'lang', widget: 'string'}
               - { label: 'Summary', name: 'summary', widget: 'string'}
+              - { label: 'Logo', name: 'logo', widget: 'image'}
               - { label: 'Description', name: 'description', widget: 'text', hint: 'Must not exceed 160 characters' }
               - { label: 'Admin Email', name: 'webmaster', widget: 'string' }
               - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff'}
