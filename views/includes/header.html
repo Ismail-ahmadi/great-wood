@@ -2,11 +2,10 @@
 
 <header class="container header" style="background-image: url('{{ image }}')"  >
 <section class="black">
-  <a href="{{ locale.url }}" class="logo">{% Icon 'logo' %}</a>
-  {% include 'components/locale.html' %}
-  {% include 'components/search-bar.html' %}
+  <a href="{{ locale.url }}" class="logo"><img src="{{ config.site.logo }}"/></a>
   <nav class="menu" role="navigation">
     {% include 'components/menu-items.html' %}
+    {% include 'components/locale.html' %}
   </nav>
   </section>
   <h3 class="header__title"> {{ headertitle }}</h3>
