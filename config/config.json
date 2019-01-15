@@ -1,13 +1,14 @@
 {
   "site": {
-    "name": "Great Wood",
-    "url": "https://greatwood.netlify.com",
-    "lang": "en",
     "summary": "Indonesian engineered  wood floors for creative living",
-    "description": "The world's FIRST ever engineered wooden flooring with -IONS for a healthier indoor air.",
+    "logo": "https://ucarecdn.com/ac6629b9-f4cb-4e16-afdf-712144b5cc96/",
+    "name": "Great Wood",
+    "lang": "en",
+    "url": "https://greatwood.netlify.com",
     "webmaster": "gw.teamweb@gmail.com",
-    "themeColor": "#f0aa27",
-    "image": "https://ucarecdn.com/e8134816-0d00-4a7b-ae52-6fa8baed0daa/"
+    "themeColor": "#f0aa28",
+    "image": "https://ucarecdn.com/e8134816-0d00-4a7b-ae52-6fa8baed0daa/",
+    "description": "The world's FIRST ever engineered wooden flooring with -IONS for a healthier indoor air."
   },
   "locales": {
     "en": {
